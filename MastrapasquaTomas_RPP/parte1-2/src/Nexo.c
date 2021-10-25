@@ -302,6 +302,7 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 
 
 			 getInt(&id, "Ingrese el id del duenio modificar el telefono :\n","Error, ingrese el id del duenio para modificar el telefono:\n", 30000, 31000);
+
 			 modificarDuenio(duenio,  lenDuenio, id);
 
 

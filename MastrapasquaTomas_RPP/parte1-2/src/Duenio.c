@@ -76,6 +76,10 @@ void modificarDuenio(eDuenio duenio[], int lenDuenio, int id)
 
 	getInt(&duenio[index].telefono, "Ingrese numero de telefono (1000000000 - 1500000000)", "ERROR, Ingrese numero de telefono (1000000000 - 1500000000)", 1000000000,1500000000);
 
+	}else
+	{
+
+		printf("No se encontro el ID\n\n");
 	}
 
 
