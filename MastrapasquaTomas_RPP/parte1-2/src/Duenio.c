@@ -58,33 +58,7 @@ void duenio_harcodear(eDuenio duenio[], int lenDuenio)
 
 }
 
-void modificarDuenio(eDuenio duenio[], int lenDuenio, int id)
-{
 
-
-	int index;
-	//int idIngresado;
-
-	index =  duenio_buscarId(duenio, lenDuenio, id);
-
-
-
-
-
-	if(index>-1)
-	{
-
-	getInt(&duenio[index].telefono, "Ingrese numero de telefono (1000000000 - 1500000000)", "ERROR, Ingrese numero de telefono (1000000000 - 1500000000)", 1000000000,1500000000);
-
-	}else
-	{
-
-		printf("No se encontro el ID\n\n");
-	}
-
-
-
-}
 
 int duenio_buscarId(eDuenio duenio[], int lenDuenio, int id)
 	{
@@ -193,6 +167,28 @@ int validarDuenioExiste(eDuenio duenio[], int lenDuenio, int idDuenio)
 
 
 	return ret;
+}
+
+void duenio_modificar(eDuenio duenio[], int lenDuenio, int i)
+{
+
+
+	//int index = EMPTY;
+
+	//index =  duenio_buscarId( duenio,  lenDuenio,  idDuenio);
+
+
+	//i = 0;
+
+	if(i != EMPTY)
+	{
+		 getInt(&duenio[i].telefono, "Ingrese el telefono a modificar", "ERROR, ingrese el telefono a modificar", 1000000000, 1500000000);
+
+		 printf("Se modifico correctamente\n");
+
+
+	}
+
 }
 
 

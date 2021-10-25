@@ -23,7 +23,6 @@ typedef struct
 void duenio_inicializar(eDuenio duenio[], int lenDuenio);
 void duenio_harcodear(eDuenio duenio[], int lenDuenio);
 
-void modificarDuenio(eDuenio duenio[], int lenDuenio, int id);
 int duenio_buscarId(eDuenio duenio[], int lenDuenio,int  id);
 
 void duenio_listarUno(eDuenio duenio);
@@ -32,6 +31,8 @@ void duenio_listar(eDuenio duenio[], int lenDuenio);
 void duenio_ordenarPorNombre(eDuenio duenio[], int lenDuenio);
 
 int validarDuenioExiste(eDuenio duenio[], int lenDuenio, int idDuenio);
+
+void duenio_modificar(eDuenio duenio[], int lenDuenio, int i);
 
 
 

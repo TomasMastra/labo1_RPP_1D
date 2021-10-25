@@ -298,12 +298,21 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 
 		case 1:
 
-			 duenio_listar(duenio,  lenDuenio);
+			mostrarEstadiasConPerroDuenio( estadia,  perro,  duenio,  len,  lenPerro,  lenDuenio);
 
 
-			 getInt(&id, "Ingrese el id del duenio modificar el telefono :\n","Error, ingrese el id del duenio para modificar el telefono:\n", 30000, 31000);
+			 getInt(&id, "Ingrese el id de la estadia para modificar el telefono :\n","Error, ingrese el id de la estadia para modificar el telefono:\n", 100000, 200000);
 
-			 modificarDuenio(duenio,  lenDuenio, id);
+
+			  buscarIDduenio( estadia,  duenio,  len,  lenDuenio,  id);
+
+
+			 // duenio_modificar( duenio,  lenDuenio,  id);
+
+
+
+
+
 
 
 
@@ -330,6 +339,56 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 
 
 }
+
+ void buscarIDduenio(eEstadia estadia[], eDuenio duenio[], int len, int lenDuenio, int id)
+{
+	int i;
+	int j;
+	int index;
+	int idDuenio;
+
+
+	for(i=0;i<len;i++)
+	{
+
+
+		if(id == estadia[i].id)
+		{
+			index = i;
+
+
+
+			idDuenio = estadia[index].idDuenio;
+
+
+			for(j=0;j<lenDuenio;j++)
+			{
+				if(idDuenio == duenio[j].id)
+				{
+
+
+
+
+					duenio_modificar(duenio,  lenDuenio,  j);
+					break;
+
+
+				}
+			}
+
+			break;
+
+		}
+
+
+
+	}
+
+
+}
+
+
+
 
 void modificarIdPerro(eEstadia estadia[], ePerro perro[], int lenPerro, int index, int id)
 {

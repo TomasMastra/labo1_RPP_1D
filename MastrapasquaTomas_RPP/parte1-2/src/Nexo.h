@@ -30,5 +30,8 @@ void mostrarEstadiasConPerroDuenio(eEstadia estadia[], ePerro perro[], eDuenio d
 
 void estadia_ordenarPorFecha(eEstadia estadia[], int len);
 
+void buscarIDduenio(eEstadia estadia[], eDuenio duenio[], int len, int lenDuenio, int id);
+
+
 
 #endif /* NEXO_H_ */

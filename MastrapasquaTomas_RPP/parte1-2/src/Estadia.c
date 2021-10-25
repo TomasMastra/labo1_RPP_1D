@@ -103,7 +103,7 @@ void confirmarEliminar(eEstadia estadia[], int i)
 	char confirm;
 
 
-			getChar(&confirm, "Ingrese S para cargar la estadia");
+			getChar(&confirm, "Ingrese S para eliminar la estadia\n\n");
 
 						 if(confirm == 's' || confirm == 'S')
 							 {
