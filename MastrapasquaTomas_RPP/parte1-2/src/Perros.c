@@ -174,6 +174,7 @@ void mostrarMasEstadias(ePerro perro[], int lenPerro, int masEstadias)
 
 	for(i=0;i<lenPerro;i++)
 	{
+
 		if(perro[i].cantidadEstadias == masEstadias && perro[i].isEmpty != -1)
 		{
 
@@ -184,6 +185,8 @@ void mostrarMasEstadias(ePerro perro[], int lenPerro, int masEstadias)
 
 
 		}
+
+
 
 
 	}

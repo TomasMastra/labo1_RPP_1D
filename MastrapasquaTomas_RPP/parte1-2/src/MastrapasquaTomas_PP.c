@@ -70,7 +70,7 @@ int main(void) {
 
 
 		 do{
-			 getInt(&option, "-------------------------------------\n"
+			 getInt(&option, "-----------------------------------------------------------------------------------\n"
 		 							 "1. ALTA estadia\n"
 		 							 "2. BAJA estadia\n"
 		 							 "3. MODIFICACION estadia\n"
@@ -78,19 +78,21 @@ int main(void) {
 		 							 "5. LISTADO perros\n"
 		 							 "6. PROMEDIO edad perros\n"
 					 	 	 	 	 "7. El perro que tiene mas estadias reservadas\n"
-					                 "8. Listado de perros con sus estadias reservadas "
-		 							 "10. SALIR\n"
-		 							 "-------------------------------------\n",
+					                 "8. Listado de perros con sus estadias reservadas\n "
+		 							 "10.SALIR\n"
+		 							 "----------------------------------------------------------------------------------\n",
 		 							 "Ingrese una opcion: "
-		 							 "-------------------------------------\n"
+		 							 "-----------------------------------------------------------------------------------\n"
 		 							 "1. ALTA estadia\n"
 		 							 "2. BAJA estadia\n"
 		 							 "3. MODIFICACION estadia\n"
 		 							 "4. LISTADO ordenado por fecha\n"
 		 							 "5. LISTADO perros\n"
 		 							 "6. PROMEDIO edad perros\n"/////////////////////////////// VER Y AGREGAR LAS QUE FALTAN
-		 							 "10. SALIR\n"
-		 							 "-------------------------------------\n"
+									 "7. El perro que tiene mas estadias reservadas\n"
+									 "8. Listado de perros con sus estadias reservadas\n"
+		 							 "10.SALIR\n"
+		 							 "-----------------------------------------------------------------------------------\n"
 		 							 "Opcion invalida, reingrese: ", 1, 10);
 
 		 		switch(option)
@@ -211,6 +213,8 @@ int main(void) {
 		 		case 5:
 
 
+ 				    systemPause("\nToque cualquier tecla para continuar...");
+
 		 			 perro_listar(perro, lenPerro);
 
 
@@ -231,6 +235,8 @@ int main(void) {
 		 		case 6:
 
 
+ 				    systemPause("\nToque cualquier tecla para continuar...");
+
 		 				perro_calcularPromedioEdad(perro, lenPerro);
 
 
@@ -240,6 +246,8 @@ int main(void) {
 
 		 		case 7:
 
+ 				    systemPause("\nToque cualquier tecla para continuar...");
+
 
 		 			 buscarMasEstadias(estadia, perro,  lenPerro, len);
 
@@ -248,7 +256,8 @@ int main(void) {
 
 		 		case 8:
 
-		 			// mostrarPerrosConEstadias(perro, estadia, lenPerro, len);
+ 				    systemPause("\nToque cualquier tecla para continuar...");
+
 
 		 			 Perro_ListarConSusEstadias(estadia, perro,  len, lenPerro);
 

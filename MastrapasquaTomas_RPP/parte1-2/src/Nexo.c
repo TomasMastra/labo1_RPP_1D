@@ -275,7 +275,7 @@ void modificarEstadia(eEstadia estadia[], ePerro perro[], eDuenio duenio[], int 
 			}else
 			{
 
-				printf("No cargo ninguna estadia ");
+				printf("No cargo ninguna estadia\n\n ");
 			}
 
 
@@ -298,6 +298,9 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 
 		case 1:
 
+			 duenio_listar(duenio,  lenDuenio);
+
+
 			 getInt(&id, "Ingrese el id del duenio modificar el telefono :\n","Error, ingrese el id del duenio para modificar el telefono:\n", 30000, 31000);
 			 modificarDuenio(duenio,  lenDuenio, id);
 
@@ -308,6 +311,9 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 
 
 		case 2:
+
+			 mostrarEstadiasConPerroDuenio( estadia,  perro,  duenio,  len,  lenPerro,  lenDuenio);
+
 
 			 getInt(&id, "Ingrese el id de la estadia para modificar el perro asociado:\n","Error, ingrese el id de la estadia para modificar el perro asociado:\n", 100000, 110000);
 
@@ -343,6 +349,9 @@ void modificarIdPerro(eEstadia estadia[], ePerro perro[], int lenPerro, int inde
 		if(index >-1)
 		{
 
+
+
+
 			 validarIdPerro( estadia,  perro,  X, index, id, lenPerro);//Valida que el perro exista y no ingrese cualquier numero
 
 
@@ -373,35 +382,6 @@ int buscarMasEstadias(eEstadia estadia[], ePerro perro[], int lenPerro, int len)
 
 
 
-	/*for(i=0;i<lenPerro;i++)
-		{
-
-		//perro[i].cantidadEstadias = 0;
-			if(flagEstadias ==0)
-			{
-				if(perro[i].isEmpty == 1)
-				{
-
-					masEstadias = perro[i].cantidadEstadias;
-					flagEstadias = 1;
-				}
-
-
-				}else
-				if(perro[i].cantidadEstadias > masEstadias)
-				{
-
-					if(perro[i].isEmpty == 1)
-					{
-
-					printf("asa");
-					masEstadias = perro[i].cantidadEstadias;
-					}
-
-
-
-				}
-		}*/
 
 	masEstadias = 0;
 	for(i=0;i<lenPerro;i++)
@@ -441,7 +421,6 @@ int buscarMasEstadias(eEstadia estadia[], ePerro perro[], int lenPerro, int len)
 
 
 
-	printf("%d\n", masEstadias);
 
 	 //mostrarMasEstadias(perro, lenPerro, masEstadias);
 
@@ -516,11 +495,14 @@ void mostrarEstadiasConPerroDuenio(eEstadia estadia[], ePerro perro[], eDuenio d
 
 	 index = validarIsEmpty( estadia,  len);
 
+	 printf("\n\n");
+
 
 if(index != EMPTY)
 {
-	printf("Listado de estadias\n\n\n"
-						   "%-10s %-20s %-20s %-20s %-20s\n\n", "ID",  "ID perro", "Fecha", "Perro", "Duenio");
+	printf("------------------------------------------------------------------------------------\n");
+	printf("Listado de estadias\n\n"
+						   "%-10s %-20s %-25s %-20s %-20s\n", "ID",  "ID perro", "Fecha", "Perro", "Duenio");
 
 
 	for(i=0;i<len;i++)
@@ -535,7 +517,7 @@ if(index != EMPTY)
 					if(estadia[i].idPerro == perro[j].id && estadia[i].idDuenio == duenio[k].id)
 					{
 
-						printf("%-10d %-20d %d/%d/%-20d %-20s %-20s\n", estadia[i].id,  estadia[i].idPerro, estadia[i].fecha.dia, estadia[i].fecha.mes, estadia[i].fecha.anio, perro[j].nombre, duenio[k].nombre);
+						printf("%-10d %-20d %-d/%-d/%-20d %-20s %-20s\n", estadia[i].id,  estadia[i].idPerro, estadia[i].fecha.dia, estadia[i].fecha.mes, estadia[i].fecha.anio, perro[j].nombre, duenio[k].nombre);
 
 					}
 				}
@@ -546,6 +528,10 @@ if(index != EMPTY)
 
 
 	}
+}else
+{
+	printf("No hay estadias\n\n");
+
 }
 
 

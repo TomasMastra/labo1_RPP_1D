@@ -39,10 +39,10 @@ void duenio_inicializar(eDuenio duenio[], int lenDuenio)
 void duenio_harcodear(eDuenio duenio[], int lenDuenio)
 {
 		int i;
-		int ids[] = {30000, 30001, 30002, 30003};
-		char nombres[][21] = {"Martina", "Antonella", "Javier", "Bautista"};
-		int telefonos[] = {1201001221, 1109785409, 1567983200, 1309786567};
-		int isEmpty[] = {1,1,1,1};
+		int ids[] = {30000, 30001, 30002, 30003, 30004};
+		char nombres[][21] = {"Martina", "Antonella", "Javier", "Bautista", "Ezequiel"};
+		int telefonos[] = {1201001221, 1109785409, 1567983200, 1309786567, 1311784378};
+		int isEmpty[] = {1,1,1,1,1};
 
 		for(i=0; i<lenDuenio; i++)
 		{
