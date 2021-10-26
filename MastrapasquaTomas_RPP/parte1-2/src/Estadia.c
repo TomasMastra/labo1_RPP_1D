@@ -17,6 +17,7 @@
 #include "Perros.h"
 #include "Funciones.h"
 #include "duenio.h"
+#include "Fechas.h"
 #include "Nexo.h"
 
 
@@ -229,7 +230,7 @@ void estadia_cancelar(eEstadia estadia[], int len)
 	void estadia_listarUno(eEstadia estadia)
 	{
 
-		printf("%-10d %-20d %d/%d/%d %-50d\n", estadia.id,  estadia.idPerro, estadia.fecha.dia, estadia.fecha.mes, estadia.fecha.anio, estadia.idDuenio);
+		printf("%-10d %-20d %-50d\n", estadia.id,  estadia.idPerro,  estadia.idDuenio);
 
 
 	}
@@ -243,7 +244,7 @@ void estadia_cancelar(eEstadia estadia[], int len)
 
 
 			printf("Listado de estadias\n\n\n"
-					   "%-10s %-20s %s %-50s\n\n", "ID",  "ID perro", "Fecha", "ID duenio");
+					   "%-10s %-20s %s \n\n", "ID",  "ID perro", "ID duenio");
 
 
 

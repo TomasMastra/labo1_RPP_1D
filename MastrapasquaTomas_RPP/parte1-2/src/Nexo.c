@@ -17,9 +17,7 @@
 #include "Perros.h"
 #include "Funciones.h"
 #include "duenio.h"
-#include "Nexo.h"
-#include "Fecha.h"
-
+#include "Fechas.h"
 #include "Nexo.h"
 
 #define EMPTY -1
@@ -64,7 +62,8 @@ int inicializar(eEstadia estadia[], ePerro perro[], eDuenio duenio[], int len, i
 
 				//estadia_pedirDatos(estadia,  index,  id);
 
-				 estadia_pedirFecha(estadia,  index);
+				  pedirFecha(estadia,  index);
+
 
 				  estadia_confirmar(estadia,  index);
 
@@ -132,6 +131,15 @@ void Perro_ListarConSusEstadias(eEstadia estadia[], ePerro perro[], int len, int
 
 
 	}
+
+
+}
+
+
+void mostrarUnaEstadiaConDuenioPerro(eEstadia estadia, ePerro perro, eDuenio duenio)
+{
+
+
 
 
 }
@@ -674,6 +682,12 @@ void estadia_ordenarPorFecha(eEstadia estadia[], int len)
 
 
 }
+
+
+
+
+
+
 
 
 

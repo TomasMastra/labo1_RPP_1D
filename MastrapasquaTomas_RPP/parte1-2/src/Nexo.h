@@ -9,6 +9,8 @@
 #ifndef NEXO_H_
 #define NEXO_H_
 
+
+
 void validarIdPerro(eEstadia estadia[], ePerro perro[], int len, int index,int id, int lenPerro);//Valida que el perro exista y no ingrese cualquier numero
 void validarIdDuenio(eEstadia estadia[], eDuenio duenio[], int lenDuenio, int index);//Valida que el duenio exista
 int voidValidarPerroTieneEstadia(eEstadia estadia[], ePerro perro[], int len);//NO LA USO
@@ -20,6 +22,8 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[], int 
 
 void modificarIdPerro(eEstadia estadia[], ePerro perro[], int lenPerro, int index, int id);//Modifica el id del perro
 
+void eliminar(eEstadia estadia[], int len);
+
 int buscarMasEstadias(eEstadia estadia[], ePerro perro[], int lenPerro, int len);//Esta funcion busca el perro con mas estadias
 void mostrarMasEstadias(ePerro perro[], int lenPerro, int masEstadias);//Esta funcion muestra el perro con mas estadias, compara si cantidadEstadias es igual a masEstadias y ahi muestra
 
@@ -27,10 +31,14 @@ void mostrarMasEstadias(ePerro perro[], int lenPerro, int masEstadias);//Esta fu
 void Perro_ListarConSusEstadias(eEstadia estadia[], ePerro perro[], int len, int lenPerro);//Muestra los perros con las estadias que tiene cada uno
 
 void mostrarEstadiasConPerroDuenio(eEstadia estadia[], ePerro perro[], eDuenio duenio[], int len, int lenPerro, int lenDuenio);
+void mostrarUnaEstadiaConDuenioPerro(eEstadia estadia, ePerro perro, eDuenio duenio);
 
 void estadia_ordenarPorFecha(eEstadia estadia[], int len);
 
 void buscarIDduenio(eEstadia estadia[], eDuenio duenio[], int len, int lenDuenio, int id);
+
+
+//void estadia_pedirFecha(eEstadia estadia[], int i);//Esta funcion pide las fechas, dia, mes y año
 
 
 

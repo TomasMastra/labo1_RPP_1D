@@ -8,6 +8,8 @@
 #ifndef ESTADIA_H_
 #define ESTADIA_H_
 
+
+
 #include <stdio.h>   //MASTRAPASQUA TOMAS D
 #include <string.h>
 #include <stdlib.h>
@@ -21,6 +23,7 @@ typedef struct
 	int anio;
 
 }eFecha;
+
 typedef struct
 {
 

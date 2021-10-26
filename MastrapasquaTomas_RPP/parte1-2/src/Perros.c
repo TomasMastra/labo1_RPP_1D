@@ -17,6 +17,7 @@
 #include "Perros.h"
 #include "Funciones.h"
 #include "duenio.h"
+#include "Fechas.h"
 #include "Nexo.h"
 
 #define P 10
