@@ -169,27 +169,44 @@ void mostrarMasEstadias(ePerro perro[], int lenPerro, int masEstadias)
 
 	int i;
 
-	printf("Listado de perros con mas estadias:\n\n"
-					   "%-5s %-20s %-20s %-20s\n", "ID", "Nombre", "Raza", "Edad");
 
-	for(i=0;i<lenPerro;i++)
+
+
+	if(masEstadias > 0)
 	{
 
-		if(perro[i].cantidadEstadias == masEstadias && perro[i].isEmpty != -1)
+		printf("Listado de perros con mas estadias:\n\n"
+
+					"%-5s %-20s %-20s %-20s\n", "ID", "Nombre", "Raza", "Edad");
+
+		for(i=0;i<lenPerro;i++)
 		{
 
 
-			 perro_listarUno(perro[i]);
+
+
+			if(perro[i].cantidadEstadias == masEstadias && perro[i].isEmpty != -1)
+			{
+
+
+				perro_listarUno(perro[i]);
 
 
 
 
+			}
 		}
 
-
-
-
+	}else
+	{
+		printf("Ningun perro tiene estadia\n\n");
 	}
+
+
+
+
+
+
 
 
 
