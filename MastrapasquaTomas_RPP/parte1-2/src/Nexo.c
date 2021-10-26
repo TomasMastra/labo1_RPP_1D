@@ -432,12 +432,8 @@ int buscarMasEstadias(eEstadia estadia[], ePerro perro[], int lenPerro, int len)
 	//int perroMasEstadias = 0;
 
 
-	for(i=0;i<lenPerro;i++)
-	{
-		perro[i].cantidadEstadias = 0;
+	 vaciarMasEstadias(perro,  lenPerro);
 
-
-	}
 
 
 
@@ -453,7 +449,6 @@ int buscarMasEstadias(eEstadia estadia[], ePerro perro[], int lenPerro, int len)
 			if(perro[i].id == estadia[j].idPerro)
 			{
 				perro[i].cantidadEstadias++;
-				printf("%d\n", perro[i].cantidadEstadias);
 			}
 
 			}

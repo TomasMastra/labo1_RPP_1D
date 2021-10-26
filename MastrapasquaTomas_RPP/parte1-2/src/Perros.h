@@ -46,6 +46,8 @@ void mostrarMasEstadias(ePerro perro[], int lenPerro, int masEstadias);
 
 int validarPerroExiste(ePerro perro[], int lenPerro, int idPerro);
 
+void vaciarMasEstadias(ePerro perro[], int lenPerro);
+
 void perro_buscarMasEstadias(ePerro perro[], int masEstadias, int lenPerro);
 
 

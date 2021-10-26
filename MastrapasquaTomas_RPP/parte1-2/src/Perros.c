@@ -264,6 +264,19 @@ int validarPerroExiste(ePerro perro[], int lenPerro, int idPerro)
 }
 
 
+void vaciarMasEstadias(ePerro perro[], int lenPerro)
+{
+
+	int i;
+	for(i=0;i<lenPerro;i++)
+		{
+			perro[i].cantidadEstadias = 0;
+
+
+		}
+
+}
+
 
 
 
