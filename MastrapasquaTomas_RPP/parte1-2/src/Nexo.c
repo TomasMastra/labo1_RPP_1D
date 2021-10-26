@@ -401,7 +401,6 @@ void modificarIdPerro(eEstadia estadia[], ePerro perro[], int lenPerro, int inde
 
 
 
-	printf("%d\n", index);
 
 
 
