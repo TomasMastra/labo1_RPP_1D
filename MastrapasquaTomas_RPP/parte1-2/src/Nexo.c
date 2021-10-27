@@ -158,7 +158,7 @@ void validarIdPerro(eEstadia estadia[], ePerro perro[], int len, int index, int 
 
 
 
-	 perro_listar(perro, P);
+	 perro_listar(perro, lenPerro);
 
 
 
@@ -367,6 +367,9 @@ void modificarIdPerro(eEstadia estadia[], ePerro perro[], int lenPerro, int inde
 		if(index >-1)
 		{
 
+			 perro_listar(perro, P);
+
+
 
 
 			 getValidInt(&estadia[index].idPerro, "Ingrese el ID del perro :\n","Error, ingrese el id del perro:\n", 7000, 7100);
@@ -376,6 +379,9 @@ void modificarIdPerro(eEstadia estadia[], ePerro perro[], int lenPerro, int inde
 
 
 
+		}else
+		{
+			printf("No se encontro el ID :(\n");
 		}
 
 
