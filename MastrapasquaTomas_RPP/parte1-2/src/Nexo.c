@@ -258,7 +258,6 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 			mostrarEstadiasConPerroDuenio( estadia,  perro,  duenio,  len,  lenPerro,  lenDuenio);
 
 
-			 getInt(&id, "Ingrese el id de la estadia para modificar el telefono :\n","Error, ingrese el id de la estadia para modificar el telefono:\n", 100000, 200000);
 
 			  getValidInt(&id, "Ingrese el id de la estadia para modificar el telefono :\n","Error, ingrese el id de la estadia para modificar el telefono:\n", 100000, 200000);
 
@@ -285,7 +284,7 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 
 
 
-			 getValidInt(&id, "Ingrese el id de la estadia para modificar el telefono :\n","Error, ingrese el id de la estadia para modificar el telefono:\n", 100000, 200000);
+			 getValidInt(&id, "Ingrese el ID de la estadia :\n","Error, ingrese el id de la estadia:\n", 100000, 200000);
 
 
 			modificarIdPerro(estadia,  perro, lenPerro,  i, id);
@@ -370,8 +369,9 @@ void modificarIdPerro(eEstadia estadia[], ePerro perro[], int lenPerro, int inde
 
 
 
+			 getValidInt(&estadia[index].idPerro, "Ingrese el ID del perro :\n","Error, ingrese el id del perro:\n", 7000, 7100);
 
-			 validarIdPerro( estadia,  perro,  X, index, id, lenPerro);//Valida que el perro exista y no ingrese cualquier numero
+
 
 
 
