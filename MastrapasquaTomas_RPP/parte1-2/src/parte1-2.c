@@ -179,7 +179,7 @@ int main(void) {
 
 			 				    systemPause("\nToque cualquier tecla para continuar...");
 
-		 					 estadia_ordenarPorFecha(estadia,  len);
+		 					 estadia_ordenarPorFecha(estadia,  len );
 
 
 		 					 duenio_ordenarPorNombre(duenio, lenDuenio);

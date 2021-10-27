@@ -33,7 +33,7 @@ void Perro_ListarConSusEstadias(eEstadia estadia[], ePerro perro[], int len, int
 void mostrarEstadiasConPerroDuenio(eEstadia estadia[], ePerro perro[], eDuenio duenio[], int len, int lenPerro, int lenDuenio);
 void mostrarUnaEstadiaConDuenioPerro(eEstadia estadia, ePerro perro, eDuenio duenio);
 
-void estadia_ordenarPorFecha(eEstadia estadia[], int len);
+void estadia_ordenarPorFecha(eEstadia estadia[],  int len);
 
 void buscarIDduenio(eEstadia estadia[], eDuenio duenio[], int len, int lenDuenio, int id);
 

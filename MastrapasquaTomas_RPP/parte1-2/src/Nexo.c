@@ -601,12 +601,12 @@ if(index != EMPTY)
 
 }
 
-void estadia_ordenarPorFecha(eEstadia estadia[], int len)
+void estadia_ordenarPorFecha(eEstadia estadia[],  int len)
 {
 
 
 	int i;
-		int j;
+	int j;
 
 		eEstadia auxEstadia;
 
@@ -653,13 +653,14 @@ void estadia_ordenarPorFecha(eEstadia estadia[], int len)
 											{
 												if(estadia[i].fecha.dia == estadia[j].fecha.dia)
 												{
-													if(estadia[i].idDuenio > estadia[j].idDuenio)
-													{
+
+
+
 
 														auxEstadia = estadia[i];
 														estadia[i] = estadia[j];
 														estadia[j] = auxEstadia;
-													}
+
 
 												}
 
