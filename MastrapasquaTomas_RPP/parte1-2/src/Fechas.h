@@ -10,8 +10,8 @@
 
 
 
-void pedirFecha(eEstadia estadia[], int i);
-void pedirmes(eEstadia estadia[], int i);
+void pedirFecha(eEstadia estadia[], int i);//pido el ingreso de la fecha
+
 
 
 #endif /* FECHAS_H_ */

@@ -22,20 +22,38 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[], int 
 
 void modificarIdPerro(eEstadia estadia[], ePerro perro[], int lenPerro, int index, int id);//Modifica el id del perro
 
-void eliminar(eEstadia estadia[], int len);
 
 int buscarMasEstadias(eEstadia estadia[], ePerro perro[], int lenPerro, int len);//Esta funcion busca el perro con mas estadias
 void mostrarMasEstadias(ePerro perro[], int lenPerro, int masEstadias);//Esta funcion muestra el perro con mas estadias, compara si cantidadEstadias es igual a masEstadias y ahi muestra
 
 
-void Perro_ListarConSusEstadias(eEstadia estadia[], ePerro perro[], int len, int lenPerro);//Muestra los perros con las estadias que tiene cada uno
+void Perro_ListarConSusEstadias(eEstadia estadia[], ePerro perro[], int len, int lenPerro);
+/*
+ * muestra los perros con las ids de las estadias que tiene cada uno
+ */
 
 void mostrarEstadiasConPerroDuenio(eEstadia estadia[], ePerro perro[], eDuenio duenio[], int len, int lenPerro, int lenDuenio);
+/*
+ * llama a la funcion de mostrar uno y le paso cada posicion del array
+ *
+ */
 void mostrarUnaEstadiaConDuenioPerro(eEstadia estadia, ePerro perro, eDuenio duenio);
+/*
+ *
+ *
+ */
 
 void estadia_ordenarPorFecha(eEstadia estadia[],  int len);
+/*
+ * Ordena las estadias por fecha
+ *
+ */
 
 void buscarIDduenio(eEstadia estadia[], eDuenio duenio[], int len, int lenDuenio, int id);
+/*
+ * Busca el id del duenio, anteriormente ingreso el id de la estadia y busco que el id duenio de la estadia sea igual al id del duenio
+ *
+ */
 
 
 //void estadia_pedirFecha(eEstadia estadia[], int i);//Esta funcion pide las fechas, dia, mes y año

@@ -136,66 +136,13 @@ void Perro_ListarConSusEstadias(eEstadia estadia[], ePerro perro[], int len, int
 }
 
 
-void mostrarUnaEstadiaConDuenioPerro(eEstadia estadia, ePerro perro, eDuenio duenio)
-{
-
-
-
-
-}
-
-
-
-
-
-void mostrarEstadiaConDuenio(eEstadia estadia[], eDuenio duenio[], int len, int lenDuenio)
-{
-
-	int i;
-	int j;
-
-
-
-	printf("Listado de estadias\n\n\n"
-						   "%-10s %-20s %s %-50s %s\n\n", "ID",  "ID perro", "Fecha", "ID duenio", "Nombre Duenio");
-
-	for(i=0;i<len;i++)
-	{
-
-		for(j=0;j<lenDuenio;j++)
-		{
-			if(estadia[i].isEmpty != -1 && duenio[j].isEmpty != -1)
-
-
-			{
-
-
-				if(estadia[i].idDuenio == duenio[j].id)// 100000   30002 JAVIER     J     100001  30001 ANTONELLA A
-				{
-
-					{
-						printf("%-10d %-20d %d/%d/%d %-50d %s\n", estadia[i].id,  estadia[i].idPerro, estadia[i].fecha.dia, estadia[i].fecha.mes, estadia[i].fecha.anio, estadia[i].idDuenio, duenio[j].nombre);
-
-
-					}
-				}
-
-
-
-					//mostrarUnaEstadiaConDuenio(estadia[i], duenio[j]);
 
 
 
 
 
 
-			}
-		}
 
-	}
-
-
-}
 
 
 

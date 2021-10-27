@@ -39,7 +39,7 @@ typedef struct
 
 }eEstadia;
 
-void estadia_harcodear(eEstadia estadia[], int len);//Harcode algunas estadias
+void estadia_harcodear(eEstadia estadia[], int len);//Harcode algunas estadias (NO LLAMO A ESTA FUNCION)
 void estadia_inicializar(eEstadia estadia[], int len);//Esta funcion inicializa el array de isEmpty en -1 (EMPTY)
 
 int validarIsEmpty(eEstadia estadia[], int len);//Esta funcion la uso en caso de que se haya ingresado la opcion 1 y se eliminen todos las estadias
@@ -59,6 +59,6 @@ void estadia_listarUno(eEstadia estadia);//Esta funcion muestra 1 estadia
 //void estadia_ordenar(eEstadia estadia[], int len);/*Esta funcion ordena por fecha, primero comparo el año y si son iguales estadia de i es igual a la de j, en caso de que sean iguales se compara el mes y despues el dia.
 
 
-void confirmarEliminar(eEstadia estadia[], int i);
+void confirmarEliminar(eEstadia estadia[], int i);//Pide al usuario que ingrese S para eliminar la estadia
 
 #endif /* ESTADIA_H_ */

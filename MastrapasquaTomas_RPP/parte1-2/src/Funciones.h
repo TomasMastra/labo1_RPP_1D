@@ -30,10 +30,10 @@ int validateLetters(char* string);//Esta funcion valida que solo se ingresen let
 int PonerMayusculas(char* string);//Esta fucion pone la primer letra en mayuscula y las demas en minuscula
 
 
-int getValidInt(int* number, char* message, char* errorMessage, int lowLimit, int hiLimit);
-int itsNumber(char* str);
-int getStrings(char* message, char* str);
-int getStringNumbers(char* message, char* input);
+int getValidInt(int* number, char* message, char* errorMessage, int lowLimit, int hiLimit);//llama a getStringNumbers y valida si es menor o mayor al limite
+int itsNumber(char* str);//valida que sea un numero
+int getStrings(char* message, char* str);//pide el numero
+int getStringNumbers(char* message, char* input);//llama al getString y al itsNumber, si se cumplen las condiciones de cada funcion.
 
 
 

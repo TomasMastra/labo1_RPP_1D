@@ -44,7 +44,7 @@ int perro_buscarID(ePerro perro[], int lenPerro, int idIngresado);//Busca la pos
 
 void mostrarMasEstadias(ePerro perro[], int lenPerro, int masEstadias);
 
-int validarPerroExiste(ePerro perro[], int lenPerro, int idPerro);
+int validarPerroExiste(ePerro perro[], int lenPerro, int idPerro);//Valida que el perro ingresado exista, si existe devuelve 1
 
 void vaciarMasEstadias(ePerro perro[], int lenPerro);
 /*Esta funcion vacia la variable masCantidad de la estructura ePerro para poder volver a calcular cuantas estadias tiene cada perro
@@ -52,6 +52,10 @@ void vaciarMasEstadias(ePerro perro[], int lenPerro);
  */
 
 void perro_buscarMasEstadias(ePerro perro[], int masEstadias, int lenPerro);
+/*
+ * busca el perro con mas estadias y se lo pasa a la funcion que lo muestra, esa funcion compara si hay varios perros con la misma cantidad de estadias
+ *
+ */
 
 
 

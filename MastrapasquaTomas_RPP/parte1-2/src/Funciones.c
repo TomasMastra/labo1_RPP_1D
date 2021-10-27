@@ -226,7 +226,6 @@ int systemPause(char* message)
 }
 
 
-//llama a getStringNumbers y valida los limites
 int getValidInt(int* number, char* message, char* errorMessage, int lowLimit, int hiLimit)
 {
 	int rt = 1;
@@ -255,7 +254,7 @@ int getValidInt(int* number, char* message, char* errorMessage, int lowLimit, in
 	return rt;
 }
 
-//verifica que el caracter ingresado sea solo numero
+
 int itsNumber(char* str)
 {
 	int rt = 0;
@@ -278,7 +277,7 @@ int itsNumber(char* str)
 	return rt;
 }
 
-//pedir cadena comun
+
 int getStrings(char* message, char* str)
 {
 	int rt = -1;
