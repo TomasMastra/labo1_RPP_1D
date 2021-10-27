@@ -137,7 +137,7 @@ void estadia_cancelar(eEstadia estadia[], int len)
 
 		  // printf(" \n  ");
 
-			getInt(&idIngresado, "Ingrese el ID de la estadia para que sea eliminada (100000-200000): ", "ERROR, Ingrese el ID de la estadia para que sea eliminada (100000-200000): ", 100000, 200000);
+			getValidInt(&idIngresado, "Ingrese el ID de la estadia para que sea eliminada (100000-200000): ", "ERROR, Ingrese el ID de la estadia para que sea eliminada (100000-200000): ", 100000, 200000);
 			index =  estadia_buscarID(estadia, len, idIngresado);
 
 

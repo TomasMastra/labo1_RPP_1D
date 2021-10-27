@@ -5,10 +5,9 @@
  *      Author: Tomas Mastra
  */
 
-#include <stdio.h>   //MASTRAPASQUA TOMAS D
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <string.h>
 
 #define OCCUPED 1
 #define EMPTY -1
@@ -225,3 +224,94 @@ int systemPause(char* message)
 	}
 	return ret;
 }
+
+
+//llama a getStringNumbers y valida los limites
+int getValidInt(int* number, char* message, char* errorMessage, int lowLimit, int hiLimit)
+{
+	int rt = 1;
+	char auxStrNumber[200];
+	int auxNumber;
+	int flag;
+
+	if(number != NULL && message != NULL && lowLimit < hiLimit)
+	{
+		flag = getStringNumbers(message, auxStrNumber);
+		auxNumber = atoi(auxStrNumber);
+
+
+
+		while(flag != 0 || auxNumber < lowLimit || auxNumber > hiLimit)
+		{
+			flag = getStringNumbers(errorMessage, auxStrNumber);
+			auxNumber = atoi(auxStrNumber);
+		}
+
+		*number = auxNumber;
+
+		rt = 0;
+	}
+
+	return rt;
+}
+
+//verifica que el caracter ingresado sea solo numero
+int itsNumber(char* str)
+{
+	int rt = 0;
+	int i;
+	int len;
+
+	if(str != NULL)
+	{
+		len = strlen(str);
+		for(i=0; i<len; i++)
+		{
+			if(str[i]<48 || str[i]>57)
+			{
+				rt = 1;
+				break;
+			}
+		}
+	}
+
+	return rt;
+}
+
+//pedir cadena comun
+int getStrings(char* message, char* str)
+{
+	int rt = -1;
+	char auxStr[200];
+
+	if(message != NULL && str != NULL)
+	{
+		printf("%s", message);
+		fflush(stdin);
+		scanf("%[^\n]", auxStr);
+
+		strcpy(str, auxStr);
+		rt = 0;
+	}
+
+	return rt;
+}
+
+//llama al getString y al itsNumber
+int getStringNumbers(char* message, char* input)
+{
+	int rt = -1;
+	char auxInput[200];
+
+	if(message != NULL && input != NULL)
+	{
+		if(getStrings(message, auxInput) == 0 && itsNumber(auxInput) == 0)
+		{
+			strcpy(input, auxInput);
+			rt = 0;
+		}
+	}
+
+	return rt;
+}
+

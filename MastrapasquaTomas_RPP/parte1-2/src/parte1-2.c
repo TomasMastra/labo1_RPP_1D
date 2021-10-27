@@ -11,7 +11,6 @@
 #include <stdio.h>   //MASTRAPASQUA TOMAS D
 #include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 
 #include "Estadia.h"
@@ -71,7 +70,7 @@ int main(void) {
 
 
 		 do{
-			 getInt(&option, "-----------------------------------------------------------------------------------\n"
+			 getValidInt(&option, "-----------------------------------------------------------------------------------\n"
 		 							 "1. ALTA estadia\n"
 		 							 "2. BAJA estadia\n"
 		 							 "3. MODIFICACION estadia\n"
@@ -82,7 +81,7 @@ int main(void) {
 					                 "8. Listado de perros con sus estadias reservadas\n "
 		 							 "10.SALIR\n"
 		 							 "----------------------------------------------------------------------------------\n",
-		 							 "Ingrese una opcion: "
+		 							 "Ingrese una opcion: \n"
 		 							 "-----------------------------------------------------------------------------------\n"
 		 							 "1. ALTA estadia\n"
 		 							 "2. BAJA estadia\n"
@@ -179,7 +178,7 @@ int main(void) {
 
 			 				    systemPause("\nToque cualquier tecla para continuar...");
 
-		 					 estadia_ordenarPorFecha(estadia,  len );
+		 					 estadia_ordenarPorFecha(estadia,  len);
 
 
 		 					 duenio_ordenarPorNombre(duenio, lenDuenio);

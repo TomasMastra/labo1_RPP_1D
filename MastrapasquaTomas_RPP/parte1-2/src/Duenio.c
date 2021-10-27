@@ -182,7 +182,7 @@ void duenio_modificar(eDuenio duenio[], int lenDuenio, int i)
 
 	if(i != EMPTY)
 	{
-		 getInt(&duenio[i].telefono, "Ingrese el telefono a modificar", "ERROR, ingrese el telefono a modificar", 1000000000, 1500000000);
+		 getValidInt(&duenio[i].telefono, "Ingrese el telefono a modificar", "ERROR, ingrese el telefono a modificar", 1000000000, 1500000000);
 
 		 printf("Se modifico correctamente\n");
 

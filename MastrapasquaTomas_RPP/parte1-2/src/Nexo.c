@@ -218,8 +218,9 @@ void validarIdPerro(eEstadia estadia[], ePerro perro[], int len, int index, int 
 
 	if(index!=EMPTY)
 		{
-	getInt(&number, "Ingrese una ID de perro: ", "Error, ingrese una ID de perro correcta: ", 7000, 7100);
 
+
+	  getValidInt(&number, "Ingrese el ID del perro: ", "ERROR, ingrese el ID del perro: ", 7000, 7100);
 
 
 	for(i=0;i<len;i++)
@@ -231,7 +232,7 @@ void validarIdPerro(eEstadia estadia[], ePerro perro[], int len, int index, int 
 
 
 					//printf("%d\n", perro[i].estadia);
-					getInt(&number, "ERROR, Ingrese una ID de perro: ", "Error, ingrese una ID de perro correcta: ", 7000, 7100);
+				  getValidInt(&number, "ERROR, Ingrese el ID del perro: ", "ERROR, ingrese el ID del perro: ", 7000, 7100);
 
 
 
@@ -298,7 +299,8 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 	int i = 0;
 
 
-	getInt(&option, "Ingrese la opcion a modificar (1.duenio 2.perro): ", "ERROR, Ingrese la opcion para modificar (1.duenio 2.perro): ", 1, 2);
+	  getValidInt(&option, "Ingrese la opcion a modificar (1.duenio 2.perro): ", "ERROR, Ingrese la opcion para modificar (1.duenio 2.perro): ", 1, 2);
+
 
 
 		switch(option)
@@ -311,11 +313,13 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 
 			 getInt(&id, "Ingrese el id de la estadia para modificar el telefono :\n","Error, ingrese el id de la estadia para modificar el telefono:\n", 100000, 200000);
 
+			  getValidInt(&id, "Ingrese el id de la estadia para modificar el telefono :\n","Error, ingrese el id de la estadia para modificar el telefono:\n", 100000, 200000);
+
+
 
 			  buscarIDduenio( estadia,  duenio,  len,  lenDuenio,  id);
 
 
-			 // duenio_modificar( duenio,  lenDuenio,  id);
 
 
 
@@ -333,7 +337,8 @@ void modificarSubMenu(eEstadia estadia[], ePerro perro[], eDuenio duenio[],  int
 			 mostrarEstadiasConPerroDuenio( estadia,  perro,  duenio,  len,  lenPerro,  lenDuenio);
 
 
-			 getInt(&id, "Ingrese el id de la estadia para modificar el perro asociado:\n","Error, ingrese el id de la estadia para modificar el perro asociado:\n", 100000, 110000);
+
+			 getValidInt(&id, "Ingrese el id de la estadia para modificar el telefono :\n","Error, ingrese el id de la estadia para modificar el telefono:\n", 100000, 200000);
 
 
 			modificarIdPerro(estadia,  perro, lenPerro,  i, id);
@@ -515,7 +520,7 @@ void validarIdDuenio(eEstadia estadia[], eDuenio duenio[], int lenDuenio, int in
 
 		if(index!=EMPTY)
 			{
-		getInt(&number, "Ingrese una ID de duenio: ", "ERROR, ingrese una ID de perro correcta: ", 30000, 31000);
+		getValidInt(&number, "Ingrese una ID de duenio: ", "ERROR, ingrese una ID de duenio correcta: ", 30000, 31000);
 
 
 
@@ -608,6 +613,7 @@ void estadia_ordenarPorFecha(eEstadia estadia[],  int len)
 	int i;
 	int j;
 
+
 		eEstadia auxEstadia;
 
 		printf("Funciona...\n");
@@ -657,9 +663,20 @@ void estadia_ordenarPorFecha(eEstadia estadia[],  int len)
 
 
 
-														auxEstadia = estadia[i];
-														estadia[i] = estadia[j];
-														estadia[j] = auxEstadia;
+
+															auxEstadia = estadia[i];
+															estadia[i] = estadia[j];
+															estadia[j] = auxEstadia;
+
+
+
+
+
+
+
+
+
+
 
 
 												}

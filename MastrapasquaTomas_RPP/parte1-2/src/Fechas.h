@@ -11,6 +11,7 @@
 
 
 void pedirFecha(eEstadia estadia[], int i);
+void pedirmes(eEstadia estadia[], int i);
 
 
 #endif /* FECHAS_H_ */

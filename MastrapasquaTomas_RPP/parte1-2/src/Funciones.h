@@ -11,7 +11,7 @@
 #include <stdio.h>   //MASTRAPASQUA TOMAS D
 #include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
+
 /*
  *
  * Estas funciones se usan para pedir un dato, cada una pide un tipo de dato diferente
@@ -28,6 +28,12 @@ int systemPause(char* message);
 
 int validateLetters(char* string);//Esta funcion valida que solo se ingresen letras, no se pueden ingresar numeros, simbolos.
 int PonerMayusculas(char* string);//Esta fucion pone la primer letra en mayuscula y las demas en minuscula
+
+
+int getValidInt(int* number, char* message, char* errorMessage, int lowLimit, int hiLimit);
+int itsNumber(char* str);
+int getStrings(char* message, char* str);
+int getStringNumbers(char* message, char* input);
 
 
 

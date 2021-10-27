@@ -24,11 +24,22 @@ void pedirFecha(eEstadia estadia[], int i)
 
 
 
-	 getInt(&estadia[i].fecha.dia, "Ingrese el dia (1-31):\n","Error, ingrese el dia (1-31):\n", 1, 31);
-	getInt(&estadia[i].fecha.mes, "Ingrese el mes (1-12):\n","Error, ingrese el mes (1-12):\n", 1, 12);
-	getInt(&estadia[i].fecha.anio, "Ingrese el año (2021 - 2030):\n","Error, ingrese el año (2021 - 2030):\n", 2021, 2030);
+
+
+
+	  getValidInt(&estadia[i].fecha.dia, "Ingrese el dia: ", "ERROR, ingrese el dia: ", 1, 31);
+	  getValidInt(&estadia[i].fecha.mes, "Ingrese el mes: ", "ERROR, ingrese el mes: ", 1, 12);
+	  getValidInt(&estadia[i].fecha.anio, "Ingrese el anio: ", "ERROR, ingrese el anio: ", 2021, 2030);
+
+
+
+
+
+
 
 }
+
+
 
 
 #endif /* FECHAS_C_ */
