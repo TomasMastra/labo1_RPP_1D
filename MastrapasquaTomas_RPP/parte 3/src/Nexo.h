@@ -57,8 +57,14 @@ void buscarIDduenio(eEstadia estadia[], eDuenio duenio[], int len, int lenDuenio
 
 
 void buscarDuenioAlan(eDuenio duenio[], eEstadia estadia[], ePerro perro[],  int len, int lenDuenio, int lenPerro);
+/*
+ * Busca un duenio que se llame Alan con una estadia reservada
+ */
 
 void buscarDueniaLucia(eDuenio duenio[], eEstadia estadia[], ePerro perro[],  int len, int lenDuenio, int lenPerro);
+/*
+ * Busca un duenio que se llama Lucia y y cuya fecha de reserva es durante la segunda quincena de noviembre 2021
+ */
 
 
 //void estadia_pedirFecha(eEstadia estadia[], int i);//Esta funcion pide las fechas, dia, mes y año

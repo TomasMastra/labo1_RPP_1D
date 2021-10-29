@@ -61,11 +61,25 @@ void perro_buscarMasEstadias(ePerro perro[], int masEstadias, int lenPerro);
 //PARTE 3
 
 int perro_buscarEspacio(ePerro perro[], int lenPerro);
+/*
+ * Esta funcion busca un espacio libre para cargar un perro
+ *
+ */
 void perro_pedir(ePerro perro[], int lenPerro, int id);
+/*
+ * Esta funcion llama a la funcion que pide los datos y le pasa la posicion del index en la que se va a cargar el perro
+ */
 void perro_alta(ePerro perro[], int lenPerro, int i);
-void perro_Lucia();
+/*
+ * Aca pido los datos de los perros y despues llamo a la funcion de confirmarCarga para ver si el ususrio quiere cargar los datos
+ *
+ */
 
 void perro_confirmarCarga(ePerro perro[], int i);
+/*
+ *
+ * Pide s para cargar el perro
+ */
 
 
 
