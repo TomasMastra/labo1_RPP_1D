@@ -740,7 +740,7 @@ void buscarDueniaLucia(eDuenio duenio[], eEstadia estadia[], ePerro perro[],  in
 				for(k=0;k<lenPerro;k++)
 				{
 
-					if(estadia[i].fecha.mes == 11 && estadia[i].fecha.anio == 2021 && estadia[i].fecha.dia >15 && estadia[i].fecha.dia<31)
+					if(estadia[i].fecha.mes == 11 && estadia[i].fecha.anio == 2021 && estadia[i].fecha.dia >15 && estadia[i].fecha.dia<30)
 					{
 
 
